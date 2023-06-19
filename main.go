@@ -16,7 +16,7 @@ var (
 	cpuUsage = promauto.NewGauge(prometheus.GaugeOpts{
 		// metric name
 		Name: "cpu_usage",
-		// provides information about this metri
+		// provides information about this metric
 		Help: "Current usage of the CPU.",
 	})
 )
