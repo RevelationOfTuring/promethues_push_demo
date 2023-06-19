@@ -36,6 +36,7 @@ func main() {
 	// NOTE: /metrics is fixed for prometheus pull, keep it fixed
 	http.Handle("/metrics", promhttp.Handler())
 	fmt.Println("====================== start metrics =================")
+	// fix port to 9999
 	if err := http.ListenAndServe(":9999", nil); err != nil {
 		log.Fatal(err)
 	}
